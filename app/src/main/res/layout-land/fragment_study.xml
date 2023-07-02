@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="es.uam.eps.dadm.cards.fragments.study.StudyViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/study_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="@{viewModel.card == null ? View.INVISIBLE : View.VISIBLE}">
+
+        <TextView
+            android:id="@+id/info_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:textSize="20sp" />
+
+        <es.uam.eps.dadm.cards.views.BoardView
+            android:id="@+id/board_view"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_below="@id/info_text_view"/>
+
+        <TextView
+            android:id="@+id/question_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:text="@{viewModel.card.question}"
+            tools:text="Texto para el entorno" />
+
+        <View
+            android:id="@+id/separator_view"
+            android:layout_below="@id/question_text_view"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_height="1dp"
+            android:visibility="@{viewModel.card.answered ? View.VISIBLE : View.INVISIBLE}"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/answer_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separator_view"
+            android:layout_centerHorizontal="true"
+            android:text="@{viewModel.card.answer}"
+            android:textSize="20sp"
+            android:visibility="@{viewModel.card.answered ? View.VISIBLE : View.INVISIBLE}"
+            tools:text="Respuesta para el entorno" />
+
+        <Button
+            android:id="@+id/answer_button"
+            android:layout_below="@id/answer_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/answer_button_text"
+            android:visibility="@{viewModel.card.answered ? View.INVISIBLE : View.VISIBLE}"/>
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/difficulty_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:visibility="@{viewModel.card.answered ? View.VISIBLE : View.INVISIBLE}">
+
+            <Button
+                android:id="@+id/difficult_button"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/difficult_button_title"
+                android:textColor="@android:color/holo_red_light" />
+
+            <Button
+                android:id="@+id/doubt_button"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/doubt_button_title"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <Button
+                android:id="@+id/easy_button"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/easy_button_title"
+                android:textColor="@android:color/holo_green_light" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    </RelativeLayout>
+</layout>

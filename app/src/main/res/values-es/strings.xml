@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tarjetas</string>
+
+    <string name="answer_button_text">Ver respuesta</string>
+    <string name="easy_button_title">Fácil</string>
+    <string name="doubt_button_title">Duda</string>
+    <string name="difficult_button_title">Difícil</string>
+
+    <string name="no_cards_left">No quedan tarjetas para repasar</string>
+    <plurals name="due_cards_format">
+        <item quantity="one">Queda %d tarjeta</item>
+        <item quantity="other">Quedan %d tarjetas</item>
+    </plurals>
+
+    <string name="subtitle_text">Toca para estudiar</string>
+
+    <string name="next_date_extended_review">Siguiente revisión: %s</string>
+    <string name="easiness_extended_review">Dificultad: %.2f</string>
+    <string name="repetitions_extended_review">Repeticiones: %d</string>
+
+    <string name="deck_interval_modifier">Modificador de Intervalo: %.2f</string>
+
+    <string name="accept_card_edit_button_title">Aceptar</string>
+    <string name="cancel_card_edit_button_title">Cancelar</string>
+    <string name="restore_button_title">Restaurar (Intervalo = 1.0)</string>
+    <string name="card_edit_question_title">Pregunta</string>
+    <string name="card_edit_answer_title">Respuesta</string>
+    <string name="write_question_hint">Escribe la pregunta</string>
+    <string name="write_answer_hint">Escribe la respuesta</string>
+    <string name="current_retention_percentage">Porcentaje de retención actual: %.2f%%</string>
+    <string name="write_retention_percentage_hint">Porcentaje de retención deseado</string>
+    <string name="non_valid_retention_percentage">Revisa que hayas escrito un número decimal entre el porcentaje de retención actual y 100 (ambos excluídos).</string>
+
+    <string name="decks_nav_menu_title">Mazos</string>
+    <string name="study_nav_menu_title">Repasar Tarjetas</string>
+    <string name="statistics_nav_menu_title">Estadísticas</string>
+    <string name="about_nav_menu_title">Acerca de</string>
+    <string name="tutorial_nav_menu_title">Tutorial</string>
+
+    <string name="author">Autor: Luis Lepore</string>
+    <string name="version">Versión: 1.0</string>
+    <string name="description">Esta es una aplicación que implementa el estudio espaciado de tarjetas.</string>
+
+    <string name="deck_edit_name_title">Nombre</string>
+    <string name="write_name_hint">Escribe el nombre</string>
+    <string name="delete">Eliminar</string>
+    <string name="confirm_delete">¿Estás seguro?</string>
+    <string name="warning">Aviso</string>
+    <string name="warning_interval_modifier">No hay tarjetas antiguas en este mazo.</string>
+
+    <string name="nav_header_content_description">Foto de la cabecera de navegación</string>
+    <string name="fragment_about_content_description">Foto de tarjeta en fragmento acerca de</string>
+    <string name="delete_content_description">Foto para borrar tarjeta/mazo</string>
+    <string name="add_content_description">Foto para añadir tarjeta/mazo</string>
+    <string name="cards_content_description">Foto de tarjeta</string>
+    <string name="edit_content_description">Foto de editar</string>
+
+    <string name="tutorial_welcome_title">Bienvenido</string>
+    <string name="tutorial_welcome_description">Para abrir el menú desplegable debes deslizar hacia la derecha.
+        \nLas opciones son:
+        \n\n1. Mazos.
+        \n2. Repasar Tarjetas.
+        \n3. Estadísticas.
+        \n4. Acerca de.
+        \n5. Tutorial.
+        \n\n(Desliza hacia la izquierda para ver la siguiente pestaña del tutorial).</string>
+    <string name="tutorial_decks_description">En esta opción podrás:
+        \n\n1. Acceder a tu lista de mazos.
+        \n2. Crear mazos (botón con un símbolo más).
+        \n3. Editar el nombre del mazo (cuadro de texto).
+        \n4. Editar el modificador de intervalo de repaso (botón con un lápiz).
+        \n5. Eliminar mazos (botón con una papelera).
+        \n6. Acceder a las tarjetas del mazo (botón con una tarjeta).
+        \n7. Crear, editar y eliminar tarjetas pertenecientes a un mazo (mismos botones que los del apartado de mazos).</string>
+    <string name="tutorial_study_description">En esta opción podrás repasar las tarjetas que estén listas para estudiar.</string>
+    <string name="tutorial_statistics_description">En esta opción podrás:
+        \n\n1. Ver gráficamente la cantidad de tarjetas repasadas cada día.
+        \n2. Ver la cantidad de tarjetas que se deben repasar en las siguientes semanas.</string>
+    <string name="tutorial_menu_title">Menú Superior</string>
+    <string name="tutorial_menu_description">El menú superior da acceso a:
+        \n\n1. Preferencias (personalizar algunos elementos de la aplicación).
+        \n2. Cuenta (iniciar sesión, registrarse y cerrar sesión).
+        \n3. Sincronizar (subir datos locales y descargar copia de la nube).
+    </string>
+    <string name="tutorial_about_description">Esta opción ofrece información sobre la aplicación.</string>
+    <string name="tutorial_farewell_title">Tutorial Completado</string>
+    <string name="tutorial_farewell_description">Esto es todo, espero que disfrutes de mi aplicación.</string>
+
+    <string name="fragment_statistics_daily">TARJETAS REPASADAS</string>
+    <string name="fragment_statistics_weekly">TARJETAS A REPASAR</string>
+    <string name="fragment_statistics_today">HOY: %s</string>
+    <string name="generate_random_cards">Generar</string>
+    <string name="between_0_6_days">0–6 d</string>
+    <string name="between_7_13_days">7–13 d</string>
+    <string name="between_14_20_days">14–20 d</string>
+    <string name="between_21_27_days">21–27 d</string>
+
+    <string name="settings_menu_title">Menú</string>
+
+    <string name="title_activity_settings">Preferencias</string>
+    <string name="decks_header">Mazos</string>
+    <string name="max_number_cards">Número máximo de tarjetas</string>
+    <string name="max_number_cards_summary">Dejar en blanco o ponerlo a 0 para ilimitado</string>
+    <string name="board_title">Mostrar pizarra</string>
+    <string name="board_summary_on">Pizarra habilitada</string>
+    <string name="board_summary_off">Pizarra no habilitada</string>
+    <string name="interval_modifier_title">Permitir modificador de intervalo de mazo</string>
+    <string name="interval_modifier_on">Modificador de intervalo de mazo habilitado</string>
+    <string name="interval_modifier_off">Modificador de intervalo de mazo no habilitado</string>
+
+    <string name="log_in_register_text">Log In/Registrarse</string>
+    <string name="log_in_button">Log In</string>
+    <string name="log_out_button">Log Out</string>
+    <string name="register_button">Registrarse</string>
+    <string name="write_email_hint">Correo Electrónico</string>
+    <string name="write_password_hint">Contraseña</string>
+    <string name="check_email_password">Comprueba que has escrito correo y contraseña</string>
+    <string name="title_activity_email_password">Cuenta</string>
+    <string name="welcome_text">Bienvenido, %s</string>
+    <string name="authentication_failed">Fallo en la autenticación</string>
+
+    <string name="title_activity_sync">Sincronizar</string>
+    <string name="upload_title">Subir datos locales a la nube</string>
+    <string name="upload_subtitle">(Esto borrará la anterior copia de seguridad)</string>
+    <string name="download_title">Descargar copia de seguridad de la nube</string>
+    <string name="download_subtitle">(Esto borrará los datos locales actuales)</string>
+    <string name="upload_description">Foto de subir a la nube</string>
+    <string name="download_description">Foto de bajar a la nube</string>
+    <string name="operation_completed">Operación completada</string>
+    <string name="operation_cancelled">Operación cancelada</string>
+</resources>

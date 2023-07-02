@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="@string/settings_menu_title"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title="@string/title_activity_email_password"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/sync"
+        android:icon="@drawable/baseline_sync_24"
+        android:title="@string/title_activity_sync"
+        app:showAsAction="ifRoom|withText" />
+
+</menu>

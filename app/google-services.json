@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "775067223196",
+    "firebase_url": "https://luisleporeperezdeobanoscards-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "luisleporeperezdeobanoscards",
+    "storage_bucket": "luisleporeperezdeobanoscards.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775067223196:android:3d0be6037144f34b555959",
+        "android_client_info": {
+          "package_name": "es.uam.eps.dadm.cards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775067223196-ho4h73ugf7d3k1dn6gacod0sqq2kp7ee.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "es.uam.eps.dadm.cards",
+            "certificate_hash": "f21cf9b3ccd25e1d24e0367ea10e27cdb2611b11"
+          }
+        },
+        {
+          "client_id": "775067223196-dndd1uo2k8j762pnvkkgh912643241su.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx5RFsVfns1voMP5q0tE5UJy5fW_eLWVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775067223196-dndd1uo2k8j762pnvkkgh912643241su.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

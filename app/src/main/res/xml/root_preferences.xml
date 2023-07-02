@@ -1,0 +1,21 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <PreferenceCategory app:title="@string/decks_header">
+        <EditTextPreference
+            app:key="max_number_cards"
+            app:title="@string/max_number_cards"
+            app:defaultValue=""
+            app:summary="@string/max_number_cards_summary"/>
+        <SwitchPreferenceCompat
+            app:key="board"
+            app:title="@string/board_title"
+            app:defaultValue="false"
+            app:summaryOff="@string/board_summary_off"
+            app:summaryOn="@string/board_summary_on" />
+        <SwitchPreferenceCompat
+            app:key="interval_modifier"
+            app:title="@string/interval_modifier_title"
+            app:defaultValue="false"
+            app:summaryOff="@string/interval_modifier_off"
+            app:summaryOn="@string/interval_modifier_on" />
+    </PreferenceCategory>
+</PreferenceScreen>

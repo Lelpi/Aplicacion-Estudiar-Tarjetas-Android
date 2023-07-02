@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="es.uam.eps.dadm.cards.fragments.title.TitleFragment"
+        android:label="TitleFragment"
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleFragment_to_tutorialFragment"
+            app:destination="@id/tutorialFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_studyFragment"
+            app:destination="@id/studyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/studyFragment"
+        android:name="es.uam.eps.dadm.cards.fragments.study.StudyFragment"
+        android:label="StudyFragment"
+        tools:layout="@layout/fragment_study"/>
+
+    <fragment
+        android:id="@+id/cardListFragment"
+        android:name="es.uam.eps.dadm.cards.fragments.card.CardListFragment"
+        android:label="CardListFragment"
+        tools:layout="@layout/fragment_card_list" >
+        <action
+            android:id="@+id/action_cardListFragment_to_cardEditFragment"
+            app:destination="@id/cardEditFragment" />
+        <argument
+            android:name="deckId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardEditFragment"
+        android:name="es.uam.eps.dadm.cards.fragments.card.CardEditFragment"
+        android:label="CardEditFragment"
+        tools:layout="@layout/fragment_card_edit" >
+        <action
+            android:id="@+id/action_cardEditFragment_to_cardListFragment"
+            app:destination="@id/cardListFragment"
+            app:popUpTo="@id/cardListFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="cardId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="es.uam.eps.dadm.cards.fragments.about.AboutFragment"
+        android:label="AboutFragment"
+        tools:layout="@layout/fragment_about"/>
+    <fragment
+        android:id="@+id/deckListFragment"
+        android:name="es.uam.eps.dadm.cards.fragments.deck.DeckListFragment"
+        android:label="DeckListFragment"
+        tools:layout="@layout/fragment_deck_list">
+        <action
+            android:id="@+id/action_deckListFragment_to_deckEditFragment"
+            app:destination="@id/deckEditFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="es.uam.eps.dadm.cards.fragments.statistics.StatisticsFragment"
+        android:label="StatisticsFragment"
+        tools:layout="@layout/fragment_statistics"/>
+    <fragment
+        android:id="@+id/deckEditFragment"
+        android:name="es.uam.eps.dadm.cards.fragments.deck.DeckEditFragment"
+        android:label="DeckEditFragment"
+        tools:layout="@layout/fragment_deck_edit">
+        <action
+            android:id="@+id/action_deckEditFragment_to_cardListFragment"
+            app:destination="@id/cardListFragment"
+            app:popUpTo="@id/deckListFragment"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="deckId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_deckEditFragment_to_deckListFragment"
+            app:destination="@id/deckListFragment"
+            app:popUpTo="@id/deckListFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_deckEditFragment_to_deckEditIntervalModifierFragment"
+            app:destination="@id/deckEditIntervalModifierFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tutorialFragment"
+        android:name="es.uam.eps.dadm.cards.fragments.tutorial.TutorialFragment"
+        android:label="TutorialFragment"
+        tools:layout="@layout/fragment_tutorial"/>
+    <fragment
+        android:id="@+id/deckEditIntervalModifierFragment"
+        android:name="es.uam.eps.dadm.cards.fragments.deck.DeckEditIntervalModifierFragment"
+        android:label="DeckEditIntervalModifierFragment"
+        tools:layout="@layout/fragment_deck_edit_interval_modifier">
+        <action
+            android:id="@+id/action_deckEditIntervalModifierFragment_to_deckEditFragment"
+            app:destination="@id/deckEditFragment"
+            app:popUpTo="@id/deckEditFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="deckId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

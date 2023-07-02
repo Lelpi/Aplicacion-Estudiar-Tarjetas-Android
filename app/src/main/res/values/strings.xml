@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">Cards</string>
+
+    <string name="answer_button_text">Check answer</string>
+    <string name="easy_button_title">Easy</string>
+    <string name="doubt_button_title">Doubt</string>
+    <string name="difficult_button_title">Difficult</string>
+
+    <string name="no_cards_left">No cards to review</string>
+    <plurals name="due_cards_format">
+        <item quantity="one">%d card remain</item>
+        <item quantity="other">%d cards remain</item>
+    </plurals>
+
+    <string name="subtitle_text">Tap to study</string>
+
+    <string name="deck_interval_modifier">Interval Modifier: %.2f</string>
+
+    <string name="next_date_extended_review">Next review: %s</string>
+    <string name="easiness_extended_review">Easiness: %.2f</string>
+    <string name="repetitions_extended_review">Repetitions: %d</string>
+
+    <string name="accept_card_edit_button_title">Accept</string>
+    <string name="cancel_card_edit_button_title">Cancel</string>
+    <string name="restore_button_title">Restore (Interval = 1.0)</string>
+    <string name="card_edit_question_title">Question</string>
+    <string name="card_edit_answer_title">Answer</string>
+    <string name="write_question_hint">Write the question text</string>
+    <string name="write_answer_hint">Write the answer text</string>
+
+    <string name="decks_nav_menu_title">Decks</string>
+    <string name="study_nav_menu_title">Review Cards</string>
+    <string name="statistics_nav_menu_title">Statistics</string>
+    <string name="about_nav_menu_title">About</string>
+    <string name="tutorial_nav_menu_title">Tutorial</string>
+
+    <string name="author">Author: Luis Lepore</string>
+    <string name="version">Version: 1.0</string>
+    <string name="description">This is an application that implements the spacing study of cards.</string>
+
+    <string name="deck_edit_name_title">Name</string>
+    <string name="write_name_hint">Write the name</string>
+    <string name="delete">Delete</string>
+    <string name="confirm_delete">Are you sure?</string>
+    <string name="warning">Warning</string>
+    <string name="warning_interval_modifier">There\'s no mature cards in this deck.</string>
+    <string name="current_retention_percentage">Current retention percentage: %.2f%%</string>
+    <string name="write_retention_percentage_hint">Desired retention percentage</string>
+    <string name="non_valid_retention_percentage">Check that you have written a decimal number between your current retention percentage and 100 (both excluded).</string>
+
+    <string name="nav_header_content_description">Navigation header picture</string>
+    <string name="fragment_about_content_description">Fragment about card picture</string>
+    <string name="delete_content_description">Delete card/deck picture</string>
+    <string name="add_content_description">Add card/deck picture</string>
+    <string name="cards_content_description">Card picture</string>
+    <string name="edit_content_description">Edit picture</string>
+
+    <string name="tutorial_welcome_title">Welcome</string>
+    <string name="tutorial_welcome_description">Swipe right to open the menu.
+        \nAvailable options:
+        \n\n1. Decks.
+        \n2. Review Cards.
+        \n3. Statistics.
+        \n4. About.
+        \n5. Tutorial.
+        \n\n(Swipe left to see the next tutorial\'s page).</string>
+    <string name="tutorial_decks_description">In this option you can:
+        \n\n1. Access your deck list.
+        \n2. Create decks (plus symbol button).
+        \n3. Edit your deck\s name (input text).
+        \n4. Edit study interval modifier (pencil button).
+        \n5. Delete decks (trash button).
+        \n6. Access to the deck\'s card list (card button).
+        \n7. Create, edit and delete cards that belong to a deck (same buttons as deck\'s section).</string>
+    <string name="tutorial_study_description">In this option you can review the cards that are ready to study.</string>
+    <string name="tutorial_statistics_description">In this option you can:
+        \n\n1. See graphically the number of cards reviewed each day.
+        \n2. See the number of cards to be reviewed in the following weeks.</string>
+    <string name="tutorial_menu_title">Top Menu</string>
+    <string name="tutorial_menu_description">The top menu allows access to:
+        \n\n1. Settings (customize parts of the app).
+        \n2. Account (log in, register and log out).
+        \n3. Synchronize (upload local data and download cloud backup).
+    </string>
+    <string name="tutorial_about_description">This option provides information about the application.</string>
+    <string name="tutorial_farewell_title">Tutorial Completed</string>
+    <string name="tutorial_farewell_description">This is it, I hope you enjoy my app.</string>
+
+    <string name="fragment_statistics_daily">CARDS REVIEWED</string>
+    <string name="fragment_statistics_weekly">CARDS TO REVIEW</string>
+    <string name="fragment_statistics_today">TODAY: %s</string>
+    <string name="generate_random_cards">Generate</string>
+    <string name="between_0_6_days">0–6 d</string>
+    <string name="between_7_13_days">7–13 d</string>
+    <string name="between_14_20_days">14–20 d</string>
+    <string name="between_21_27_days">21–27 d</string>
+
+    <string name="arg_background" translatable="false">background</string>
+    <string name="arg_title" translatable="false">title</string>
+    <string name="arg_description" translatable="false">description</string>
+
+    <string name="settings_menu_title">Menu</string>
+
+    <string name="title_activity_settings">Settings</string>
+    <string name="decks_header">Decks</string>
+    <string name="max_number_cards">Maximum number of cards</string>
+    <string name="max_number_cards_summary">Leave in blank or set to 0 for unlimited</string>
+    <string name="board_title">Show board</string>
+    <string name="board_summary_on">Board available</string>
+    <string name="board_summary_off">Board unavailable</string>
+    <string name="interval_modifier_title">Allow deck interval modifier</string>
+    <string name="interval_modifier_on">Deck interval modifier available</string>
+    <string name="interval_modifier_off">Deck interval modifier unavailable</string>
+
+    <string name="log_in_register_text">Log In/Register</string>
+    <string name="log_out_button">Log Out</string>
+    <string name="log_in_button">Log In</string>
+    <string name="register_button">Register</string>
+    <string name="write_email_hint">Email</string>
+    <string name="write_password_hint">Password</string>
+    <string name="check_email_password">Check that you have written email and password</string>
+    <string name="title_activity_email_password">Account</string>
+    <string name="welcome_text">Welcome, %s</string>
+    <string name="authentication_failed">Authentication failed</string>
+
+    <string name="title_activity_sync">Synchronize</string>
+    <string name="upload_title">Upload local data to backup cloud</string>
+    <string name="upload_subtitle">(This will delete previous backup)</string>
+    <string name="download_title">Download backup cloud</string>
+    <string name="download_subtitle">(This will delete current local data)</string>
+    <string name="upload_description">Upload cloud image</string>
+    <string name="download_description">Download cloud image</string>
+    <string name="operation_completed">Operation completed</string>
+    <string name="operation_cancelled">Operation cancelled</string>
+
+</resources>
